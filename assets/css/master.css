@@ -1,0 +1,78 @@
+:root {
+	--color-main: #177c43
+}
+
+@font-face {
+	font-family: 'font-bold';
+	src: url('../font/OpenSans-Bold.ttf');
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'font-italic';
+	src: url('../font/OpenSans-Italic.ttf');
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'font-regular';
+	src: url('../font/OpenSans-Regular.ttf');
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'font-magic';
+	src: url('../font/SVN-APPLEBERRY.TTF');
+	font-display: swap;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'font-regular';
+}
+
+.text-bold {
+	font-family: 'font-bold' !important;
+}
+
+.text-italic {
+	font-family: 'font-italic' !important;
+}
+
+.text-magic {
+	font-family: 'font-magic' !important;
+}
+
+.text-main {
+	color: var(--color-main) !important;
+}
+
+.main {
+	background: url('../img/bg.png') center no-repeat;
+	background-size: cover;
+}
+
+footer {
+    background: url('../img/footer-bg.png') center no-repeat;
+    background-size: cover;
+}
+
+footer .row {
+	padding: 80px 0px !important; 
+}
+
+@media (max-width: 991.98px) {
+	footer table tbody tr {
+		display: flex !important;
+		flex-wrap: wrap !important;
+	}
+
+	footer table tbody tr td {
+	    flex: 0 0 100% !important;
+	    max-width: 100%;
+	}
+}
