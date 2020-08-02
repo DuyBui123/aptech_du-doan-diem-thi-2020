@@ -10,9 +10,9 @@
     </div>
     <p class="text-center text-main text-magic pt-3">
         Chúc bạn đạt được kết quả thi như mong muốn nhé!
-        Nhớ làm đủ các bước điều kiện để nhận được quà nha!
+        Nhớ share game public với hashtag #AptechVN #DoandiemdungTrungquahay và tag thêm 3 người bạn để bạn bè mình cũng được nhận quà nha!
         Đừng quên theo dõi kết quả game sẽ được công bố trên
-        Fanpage: <a href="https://www.facebook.com/aptechvietnam.com.vn">Hệ thống Đào tạo Lập trình viên Quốc tế Aptech</a> nha!
+        Fanpage: <a href="https://www.facebook.com/aptechvietnam.com.vn">Hệ thống Đào tạo Lập trình viên Quốc tế Aptech</a>.
     </p>
     <div class="fb-share-button pb-5" data-href="<?php echo DOMAIN ?>" data-layout="button" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Chia sẻ</a></div>
 </div>
