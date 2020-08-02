@@ -1,9 +1,9 @@
 <?php
-    require('../phpmailer/PHPMailer.php'); 
-    require('../phpmailer/SMTP.php'); 
-    require('../phpmailer/Exception.php');
-    require('../db.php');
-    require('../config.php');
+    include_once('../phpmailer/PHPMailer.php'); 
+    include_once('../phpmailer/SMTP.php'); 
+    include_once('../phpmailer/Exception.php');
+    include_once('../db.php');
+    include_once('../config.php');
 
     use PHPMailer\PHPMailer\PHPMailer;
     use PHPMailer\PHPMailer\SMTP;
@@ -11,8 +11,11 @@
     if ($_POST) {
         $db = new DB();
         $user = $db->getUserByEmail($_POST['txtEmail']);
-        if (!isset($user))
+
+        if (!isset($user)) {
             header('Location: ../?p=3-2');
+            exit();
+        }
 
         $link = DOMAIN.'?p=3&u='.$user['id'];
         MailSender::mail($user['email'], $user['name'], $link);

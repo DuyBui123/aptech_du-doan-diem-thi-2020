@@ -1,5 +1,5 @@
 <?php
-    require('./db.php');
+    include_once('./db.php');
 
     if ($_GET['u']) {
         $db = new DB();
