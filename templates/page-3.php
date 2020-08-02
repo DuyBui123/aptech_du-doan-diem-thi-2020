@@ -23,7 +23,7 @@
             </li>
             <li class="d-flex align-items-start">
                 <img class="mr-2" src="./assets/img/dot.png" alt="" srcset="">
-                <span>Các bạn nhớ like Fanpage <a class="text-main" href="https://www.facebook.com/aptechvietnam.com.vn">Hệ thống Đào tạo Lập trình viên Quốc tế Aptech</a> và làm đủ các bước điều kiện để nhận quà nhé!</span>
+                <span>Các bạn nhớ like Fanpage <a class="text-main" href="https://www.facebook.com/aptechvietnam.com.vn">Hệ thống Đào tạo Lập trình viên Quốc tế Aptech</a>, like post, share post public hoặc story có tag chúng mình và chụp ảnh màn hình, thả vào comment tag 3 người bạn nha!</span>
             </li>
         </ul>
         <p class="text-italic">(Lưu ý nè: Số điểm được tính trên tổng điểm 3 môn thuộc khối thi của bạn không nhân hệ số nha! <img src="./assets/img/smile.png" alt=""> )</p>
