@@ -27,16 +27,16 @@
         </div>
     </div>
     <div class="col-lg-6 col-md-6 col-sm-12 pt-5">
-        <form action="" method="post" class="d-flex flex-column justify-content-center align-items-center py-4 mt-3">
+        <form action="./actions/predict.php" method="POST" class="d-flex flex-column justify-content-center align-items-center py-4 mt-3">
             <label class="text-italic text-center">Thông tin người chơi:</label>
-            <input class="input-magic mb-2" type="text" placeholder="Họ và tên" required>
-            <input class="input-magic mb-2" type="text" placeholder="Số điện thoại" required>
-            <input class="input-magic mb-2" type="email" placeholder="Email" required>
-            <input class="input-magic mb-2" type="text" placeholder="Tỉnh/Thành phố" required>
-            <input class="input-magic mb-2" type="text" placeholder="Khối thi" required>
+            <input class="input-magic mb-2" type="text" placeholder="Họ và tên" name="txtName" required>
+            <input class="input-magic mb-2" type="text" placeholder="Số điện thoại" name="txtPhone" required>
+            <input class="input-magic mb-2" type="email" placeholder="Email" name="txtEmail" required>
+            <input class="input-magic mb-2" type="text" placeholder="Tỉnh/Thành phố" name="txtCity" required>
+            <input class="input-magic mb-2" type="text" placeholder="Khối thi" name="txtClass" required>
             <div class="area-magic mb-3">
                 <h5 class="text-main text-bold text-center">ĐIỂM DỰ ĐOÁN</h5>
-                <input type="text" required>
+                <input type="number" name="txtPredictedMask" required>
             </div>
             <input type="submit" value="GỬI DỰ ĐOÁN" class="text-white px-4 text-bold">
         </form>

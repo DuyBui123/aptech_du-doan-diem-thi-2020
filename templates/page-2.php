@@ -17,9 +17,9 @@
                 <span>Các bạn nhớ like Fanpage <a class="text-main" href="https://www.facebook.com/aptechvietnam.com.vn">Hệ thống Đào tạo Lập trình viên Quốc tế Aptech</a> và làm đủ các bước điều kiện để nhận quà nhé!</span>
             </li>
         </ul>
-        <form action="" method="post">
+        <form action="./actions/mail.php" method="post">
             <div class="input-magic d-flex align-items-center bg-white">
-                <input type="email" name="" id="" placeholder="Email của bạn" class="flex-grow-1" required>
+                <input type="email" name="txtEmail" placeholder="Email của bạn" class="flex-grow-1" required>
                 <button id="btn-md-screen" class="btn-transfer text-center text-white text-bold d-flex align-items-center px-4 ml-auto">
                     <img src="./assets/img/transfer.png" alt="" srcset="">
                     <span class="pl-2">GỬI</span>

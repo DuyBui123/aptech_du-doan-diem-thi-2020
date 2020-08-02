@@ -22,8 +22,8 @@ form {
     border-bottom: none;
 }
 
-.form-container table tr {
-    line-height: 2rem;
+.form-container .info {
+    word-break: break-word;
 }
 
 .area-magic {

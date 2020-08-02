@@ -1,3 +1,12 @@
+<?php
+    require('./db.php');
+
+    if ($_GET['u']) {
+        $db = new DB();
+        $user = $db->getUserById($_GET['u']);
+    }
+?>
+
 <link rel="stylesheet" href="./assets/css/page-3.css">
 
 <div class="row pb-5">
@@ -24,37 +33,30 @@
     </div>
     <div class="col-lg-6 col-md-6 col-sm-12 pt-5">
         <div class="form-container mt-3 d-flex flex-column align-items-center">
-            <table class="w-75 my-4">
-                <tr>
-                    <td>Họ và tên:</td>
-                    <td class="text-right text-bold pl-3">aasdasd asdasd ádsad</td>
-                </tr>
-                <tr>
-                    <td>Số điện thoại:</td>
-                    <td class="text-right text-bold pl-3">aasdasd asdasd ádsad</td>
-                </tr>
-                <tr>
-                    <td>Email:</td>
-                    <td class="text-right text-bold pl-3">aasdasd asdasd ádsad</td>
-                </tr>
-                <tr>
-                    <td>Tỉnh/Thành phố:</td>
-                    <td class="text-right text-bold pl-3">aasdasd asdasd ádsad</td>
-                </tr>
-                <tr>
-                    <td>Khối thi:</td>
-                    <td class="text-right text-bold pl-3">aasdasd asdasd ádsad</td>
-                </tr>
-                <tr>
-                    <td>Điểm dự đoán:</td>
-                    <td class="text-right text-bold pl-3">aasdasd asdasd ádsad</td>
-                </tr>
-            </table>
-            <form action="" method="post" class="d-flex flex-column justify-content-center align-items-center py-4 w-100">
+            <div class="w-75 my-4 d-flex info">
+                <div>
+                    <p>Họ và tên:</p>
+                    <p>Số điện thoại:</p>
+                    <p>Email:</p>
+                    <p>Tỉnh / Thành phố:</p>
+                    <p>Khối thi:</p>
+                    <p>Điểm dự đoán:</p>
+                </div>
+                <div class="pl-3 text-right text-bold">
+                    <p><?php echo $user['name'] ?></p>
+                    <p><?php echo $user['phone'] ?></p>
+                    <p><?php echo $user['email'] ?></p>
+                    <p><?php echo $user['city'] ?></p>
+                    <p><?php echo $user['class'] ?></p>
+                    <p><?php echo $user['predicted_mark'] ?></p>
+                </div>
+            </div>
+            <form action="./actions/confirm.php" method="POST" class="d-flex flex-column justify-content-center align-items-center py-4 w-100">
                 <h5 class="text-bold text-center mb-3">Hoàn thành game nào!</h5>
                 <div class="area-magic mb-3">
                     <h5 class="text-main text-bold text-center">ĐIỂM THỰC TẾ</h5>
-                    <input type="text" required>
+                    <input type="number" name="textRealMark" required>
+                    <input type="text" name="txtId" value="<?php echo $user['id'] ?>" class="d-none">
                 </div>
                 <input type="submit" value="GỬI KẾT QUẢ" class="text-white px-4 text-bold">
             </form>
