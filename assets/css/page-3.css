@@ -12,15 +12,18 @@ form {
     background-color: #f8ba63;
     border: 3px solid #b58761;
     border-radius: 25px;
+    box-sizing: content-box;
 }
 
-.input-magic {
-    border: 2px solid #4f2e13;
-    border-radius: 30px;
-    height: 45px;
-    width: 70%;
-    padding-left: 1rem;
-    font-family: 'font-bold';
+.form-container {
+    border-radius: 26px;
+    border: 3px solid #b58761;
+    background-color: #f4f8fa;
+    border-bottom: none;
+}
+
+.form-container table tr {
+    line-height: 2rem;
 }
 
 .area-magic {

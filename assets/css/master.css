@@ -35,6 +35,11 @@ body {
 	font-family: 'font-regular';
 }
 
+input:focus,
+button:focus {
+    outline: none !important;
+}
+
 .text-bold {
 	font-family: 'font-bold' !important;
 }

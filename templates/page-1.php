@@ -23,20 +23,20 @@
         </ul>
         <p class="text-italic">(Lưu ý nè: Số điểm được tính trên tổng điểm 3 môn thuộc khối thi của bạn không nhân hệ số nha! <img src="./assets/img/smile.png" alt=""> )</p>
         <div class="d-flex justify-content-center pt-4">
-            <img class="mw-100" src="./assets/img/page-1-gift.png" alt="">
+            <img class="mw-100" src="./assets/img/gift.png" alt="">
         </div>
     </div>
     <div class="col-lg-6 col-md-6 col-sm-12 pt-5">
         <form action="" method="post" class="d-flex flex-column justify-content-center align-items-center py-4 mt-3">
             <label class="text-italic text-center">Thông tin người chơi:</label>
-            <input class="input-magic mb-2" type="text" placeholder="Họ và tên">
-            <input class="input-magic mb-2" type="text" placeholder="Số điện thoại">
-            <input class="input-magic mb-2" type="email" placeholder="Email">
-            <input class="input-magic mb-2" type="text" placeholder="Tỉnh/Thành phố">
-            <input class="input-magic mb-2" type="text" placeholder="Khối thi">
+            <input class="input-magic mb-2" type="text" placeholder="Họ và tên" required>
+            <input class="input-magic mb-2" type="text" placeholder="Số điện thoại" required>
+            <input class="input-magic mb-2" type="email" placeholder="Email" required>
+            <input class="input-magic mb-2" type="text" placeholder="Tỉnh/Thành phố" required>
+            <input class="input-magic mb-2" type="text" placeholder="Khối thi" required>
             <div class="area-magic mb-3">
                 <h5 class="text-main text-bold text-center">ĐIỂM DỰ ĐOÁN</h5>
-                <input type="number">
+                <input type="text" required>
             </div>
             <input type="submit" value="GỬI DỰ ĐOÁN" class="text-white px-4 text-bold">
         </form>

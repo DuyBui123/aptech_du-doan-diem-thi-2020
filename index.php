@@ -1,5 +1,5 @@
 <?php
-    $page = isset($_GET['p']) ? $_GET['p'] : 1;
+    $page = isset($_GET['p']) ? $_GET['p'] : '1';
 ?>
 
 <!DOCTYPE html>
@@ -17,14 +17,7 @@
     <?php require('./templates/banner.php'); ?>
     <section class="main">
         <div class="container">
-            <?php 
-                switch ($page) {
-                    case 1:
-                        require('./templates/page-1.php'); break;
-                    default:
-                        break;
-                }
-            ?>
+            <?php require("./templates/page-$page.php"); ?>
         </div>
     </section>
     <?php require('./templates/footer.php'); ?>
