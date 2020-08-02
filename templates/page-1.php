@@ -36,7 +36,7 @@
             <input class="input-magic mb-2" type="text" placeholder="Khối thi" name="txtClass" required>
             <div class="area-magic mb-3">
                 <h5 class="text-main text-bold text-center">ĐIỂM DỰ ĐOÁN</h5>
-                <input type="number" name="txtPredictedMask" required>
+                <input type="number" min="0" inputmode="numeric" pattern="[0-9]*" name="txtPredictedMask" required>
             </div>
             <input type="submit" value="GỬI DỰ ĐOÁN" class="text-white px-4 text-bold">
         </form>

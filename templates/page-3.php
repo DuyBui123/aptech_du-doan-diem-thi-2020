@@ -55,7 +55,7 @@
                 <h5 class="text-bold text-center mb-3">Hoàn thành game nào!</h5>
                 <div class="area-magic mb-3">
                     <h5 class="text-main text-bold text-center">ĐIỂM THỰC TẾ</h5>
-                    <input type="number" name="textRealMark" required>
+                    <input type="number" min="0" inputmode="numeric" pattern="[0-9]*" name="textRealMark" required>
                     <input type="text" name="txtId" value="<?php echo $user['id'] ?>" class="d-none">
                 </div>
                 <input type="submit" value="GỬI KẾT QUẢ" class="text-white px-4 text-bold">
