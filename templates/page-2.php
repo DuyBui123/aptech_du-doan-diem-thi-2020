@@ -14,7 +14,7 @@
             </li>
             <li class="d-flex align-items-start">
                 <img class="mr-2" src="./assets/img/dot.png" alt="" srcset="">
-                <span>Các bạn nhớ like Fanpage <a class="text-main" href="https://www.facebook.com/aptechvietnam.com.vn">Hệ thống Đào tạo Lập trình viên Quốc tế Aptech</a>, like post, share post public với hashtag #AptechVN #DoandiemdungTrungquahay hoặc story có tag chúng mình, chụp ảnh màn hình, thả vào comment và tag thêm 3 người bạn nha!</span>
+                <span>Các bạn nhớ like Fanpage <a class="text-main" href="https://www.facebook.com/aptechvietnam.com.vn">Hệ thống Đào tạo Lập trình viên Quốc tế Aptech</a>, share game public với hashtag #AptechVN #DoandiemdungTrungquahay và tag thêm 3 người bạn để bạn bè mình cũng được nhận quà nha!</span>
             </li>
         </ul>
         <form action="./actions/mail.php" method="post">
