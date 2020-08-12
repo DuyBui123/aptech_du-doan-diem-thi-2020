@@ -2,7 +2,7 @@
     define('DOMAIN', 'http://'.$_SERVER['HTTP_HOST'].'/dudoandiemthi2020');
     // define('MAIL_USN', 'relayAA@aprotrain.com');
     // define('MAIL_PWD', 'zxcde321qa');
-    define('MAIL_USN', 'buiphuongaptutc@gmail.com');
+    define('MAIL_USN', 'aptech.campaign@gmail.com');
     define('MAIL_PWD', '12004917');
 
     define('DB_HOST', '171.244.142.78');
