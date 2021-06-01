@@ -2,9 +2,9 @@
     include_once('config.php');
 
     $page = isset($_GET['p']) ? $_GET['p'] : 1;
-    if (strtotime("27 August 2020") - time() < 0 && $page == 1)
+    if (strtotime("27 August 2021") - time() < 0 && $page == 1)
         $page = 2;
-    if (strtotime("5 September 2020") - time() < 0)
+    if (strtotime("5 September 2021") - time() < 0)
         $page = '3-1';
 ?>
 
